@@ -31,7 +31,7 @@ namespace Text_Extractor
             GetDirectoryInfo();
             GetIgnoreInfo();
             FindFiles();            
-            //ExportFiles();
+            ExportFiles();
         }
 
         private void GetDirectoryInfo()
@@ -165,7 +165,7 @@ namespace Text_Extractor
         private void WriteToFile(string path)
         {
             string[] lines = File.ReadAllLines(path);
-            File.AppendAllLines("hamada.txt", lines);
+            File.AppendAllLines("allcode.txt", lines);
         }
 
     }
